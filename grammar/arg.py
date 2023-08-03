@@ -18,3 +18,5 @@ def my_function1(**kwargs):
 
 
 my_function1(a=1, b=2, c=3)  # 输出：a = 1 b = 2 c = 3
+
+# 注：pip freeze > requirements.txt  # 生成
