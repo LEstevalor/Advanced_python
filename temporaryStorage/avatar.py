@@ -1,3 +1,4 @@
+"""
 def avatar(self, request, *args, **kwargs):
     username = kwargs.get("username")  # 没有带username，url的w+就不会匹配到
     user_info = IegUsersImages.objects.filter(username=username).first()
@@ -25,3 +26,4 @@ def avatar(self, request, *args, **kwargs):
             logger.error("error:get_head_img:{}，请求参数：{}和{}".format(err, IMG_SIZE, username))
 
     return HttpResponse(user_info.image, content_type='image/jpg')
+"""
